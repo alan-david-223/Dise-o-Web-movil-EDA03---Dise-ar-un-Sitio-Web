@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calendario</title>
+    <!--CSS Full Calendar-->
+    <link href='fullcalendar/core/main.css' rel='stylesheet' />
+    <link href='fullcalendar/daygrid/main.css' rel='stylesheet' />
+    <!--Hojas de estilos-->
+    <link rel="stylesheet" type="text/css" href="css/stylesresponsive.css">
+    <link rel="stylesheet" type="text/css" href="css/calendario.css">
+    <!--JS Full Calendar-->
+    <script src='fullcalendar/core/main.js'></script>
+    <script src='fullcalendar/daygrid/main.js'></script>
+    <!--JS con opciones para Calendar-->
+    <script src="js/calendario.js"></script>    
+</head>
+<body>
+
+    <!--header / Barra de navegación-->
+    <header>
+        <div class="contenedor">
+          <h1><img src="img/iconocorazion.png" alt=""></h1>
+          <input type="checkbox" id="menu-bar">
+          <label for="menu-bar"><img src="img/iconomenu.png" alt=""></label>
+              <nav class="menu">
+              <a href="index.html">inicio</a>
+              <a href="enfermedades.html">enfermedades</a>
+              <a href="calendario.html">vacunas</a>
+              <a href="mapa-de-hospitales.html">hospitales</a>
+              <a href="contacto.html">contacto</a>
+              </nav>
+        </div>
+      </header>
+        <!--OBJETO CALENDARIO-->
+            <main>
+                <article id="calendario"></article>
+            </main>
+
+    <!--FOOTER-->
+    <footer>
+        <div class="contenedor">
+          <div class="contenedordatos">
+            <p id="datos">Alan David Valdez- Dni: 34929331</p>
+            <p id="datos">Angel Alberto Escalera- Dni: 42339626</p>
+            <p id="datos">Brenda Mariana Rementeria- Dni: 41662104</p>
+          </div>
+          <div class="enlacess">
+            <a class="linkfooter" href="index.html">Inicio</a> <dt></dt>
+            <a class="linkfooter" href="calendario.html">Vacunas</a> <dt></dt>
+            <a class="linkfooter" href="enfermedades.html">Enfermedades</a> <dt></dt>
+            <a class="linkfooter" href="mapa-de-hospitales.html">Ubicacion</a><dt></dt>
+          </div>
+          <div class="redessociales">
+            <a><img src="img/iconistag.png" alt=""></a>
+            <a><img src="img/iconfcb.png" alt=""></a>
+            <a><img src="img/gmail.png" alt=""></a>
+          </div>
+        </div>
+        </div>
+        </footer>
+</body>
+</html>

@@ -1,0 +1,122 @@
+/*Estilo de la grilla del body*/
+
+.gridContenido{
+    margin: auto;
+    width: fit-content;
+    display: grid;
+    grid-template-columns: 800px;
+    grid-template-rows: 725px;
+}
+
+/*--Formulario--
+Contiene el estilo para el contenedor general del formulario, título, labels, inputs, botones y mensajes de error.*/
+
+.h3-con{
+    font-size: 25px;
+}
+.contenedorFormCon{
+    height: 500px;
+    width: 500px;
+    padding: 50px;
+    margin-left: 50px;
+    display: block;
+    float: left;
+    grid-column: 1;
+    grid-row: 1;
+}
+label{
+    font-size: 17px;
+}
+input{
+    margin-top: 5px;
+    margin-bottom: 15px;
+    height: 25px;
+    width: 500px;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: turquoise;
+    clear: both;
+}
+#in-consulta{
+    height: 100px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    width: 500px;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: turquoise;
+    clear: both;
+}
+#enviar{
+    height: 35px;
+    width: 70px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    float: right;
+    background-color:  rgb(9, 160, 160);
+}
+
+#reset{
+    height: 35px;
+    width: 70px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    background-color:  rgb(9, 160, 160);
+}
+#enviar:hover{
+    background-color: turquoise;
+    border-color: teal;
+}
+#reset:hover{
+    background-color: turquoise;
+    border-color: teal;
+}
+.error{
+    color: red;
+}
+#caracteresRestantes{
+    margin-top: 0px;
+}
+
+/*--Info Contacto--
+Contiene el estilo para el contenedor de la información de contacto y los íconos de redes sociales.*/
+
+.contenedorInfoCon{
+    height: 500px;
+    width: 400px;
+    padding-top: 50px;
+    margin-right: 80px;
+    display: block;
+    float: right;
+    grid-column: 2;
+    grid-row: 1;
+}
+i{
+    font-size: 50px;
+    padding-right: 15px;
+}
+
+
+/*--Ubicacion--
+Contiene el estilo para el contenedor general y el insert del mapa.*/
+
+.contenedorMapa{
+    height: 500px;
+    width: 1050px;
+    padding: 50px;
+    margin-left: 100px;
+    display: block;
+    float: left;
+    text-align: center;
+    grid-row: 2;
+}
+#mapa{
+    height: 350px;
+    width: 900px;
+    border-radius: 25px;
+}

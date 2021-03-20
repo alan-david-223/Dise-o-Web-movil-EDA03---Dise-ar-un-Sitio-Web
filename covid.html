@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html>
+<head>    
+	<link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/covid.css">    
+	<title>COVID-19</title>
+</head>
+
+<header>
+   
+        
+        <div class="headercontenido">
+            <img class="iconoprincipal"  src="img/iconocorazion.png">
+    </div>
+   
+   
+    <div class="headercontenido">
+        <input type="search" id="barrabusqueda" list="enfe">
+        <img src="img/lupa.png" class="lupa">
+
+        <datalist id="enfe">
+<option value="enfermedes"></option>
+<option value="enfermedes"></option>
+<option value="enfermedes"></option>
+<option value="enfermedes"></option>
+<option value="enfermedes"></option>
+
+        </datalist>
+    </div>
+    
+</header>
+<body>
+
+    <div class="barraherramientas">
+        <ul class="contenidoherramientas">
+            <li class="elemento"><a class="botonherramienta" href="index.html">Inicio</a></li>
+            <li class="elemento"><a class="botonherramienta" href="enfermedades.html">Enfermedades</a></li>
+            <li class="elemento"><a class="botonherramienta" href="calendario.html">Vacunas</a></li>
+            <li class="elemento"><a class="botonherramienta" href="mapa-de-hospitales.html">Hospitales</a></li>
+            <li class="elemento"><a class="botonherramienta" href="contacto.html">Contacto</a></i>
+           
+        </ul>
+        
+        </div>		
+
+        <div class="gridContenedorGeneral">
+            
+
+            <article id="covid">
+                <h1 id="covidtitu">COVID - 19</h1>
+
+			    <img id="covidimg" src="img/covid.jpg">
+            
+    			<p id="covidinfo">COVID-19 (acrónimo del inglés coronavirus disease 2019),​ en español conocida como enfermedad por coronavirus 2019 e incorrectamente como neumonía por coronavirus, es una enfermedad infecciosa causada por el virus SARS-CoV-2.9​10​            
+                Produce síntomas similares a los de la gripe o catarro, entre los que se incluyen fiebre, tos,11​ disnea, mialgia y fatiga.  En casos graves se caracteriza por producir neumonía, síndrome de dificultad respiratoria aguda y choque séptico que conduce a cerca de 3,75 % de los infectados a la muerte según la OMS.16​ No existe tratamiento específico; las medidas terapéuticas principales consisten en aliviar los síntomas y mantener las funciones vitales.​           
+                La transmisión del SARS-CoV-2 se produce mediante pequeñas gotas —microgotas de Flügge17​— que se emiten al hablar, estornudar, toser o espirar, que al ser despedidas por un portador (que puede no tener síntomas de la enfermedad o estar incubándola)​ pasan directamente a otra persona mediante la inhalación, o quedan sobre los objetos y superficies que rodean al emisor, y luego, a través de las manos, que lo recogen del ambiente contaminado, toman contacto con las membranas mucosas orales, nasales y oculares, al tocarse la boca, la nariz o los ojos.​ Esta última es la principal vía de propagación, ya que el virus puede permanecer viable hasta por días en los fómites (cualquier objeto carente de vida, o sustancia, que si se contamina con algún patógeno es capaz de transferirlo de un individuo a otro)</p>
+
+            </article>
+                
+            
+
+            
+                <h1 id="tituloformulario">FORMULARIO DE DETECCIÓN (TEST) DE CORONA VIRUS (COVID-19)</h1>
+                <article class="infoSintomas">     
+                    
+                    <p>Hola usuario! Si tienes síntomas de XXXX o has estado en contacto con una persona afectada deberías hacer un control y seguimiento diario de tus síntomas.</p>
+                    <p>Esta aplicación te permitirá hacer un seguimiento de la evolución de los síntomas y te dará las indicaciones y consejos a seguir en cada caso. El uso de este servicio supone la aceptación de los términos y la política de privacidad descritos en <a href="www.google.com">Ver las condiciones y políticas</a></p>
+ 
+                     <h3>SÍNTOMAS</h3>
+ 
+                      <img src="img/24-fiebre-dolor-garganta.png" class="sintomasimg">
+                      <img src="img/25-fiebre-dificultad-respirar.png"class="sintomasimg">
+                      <img src="img/23-fiebre-tos.png"class="sintomasimg" id="tos">
+ 
+                 </article>
+                    
+              
+                 <form class="form" action="#" onsubmit="return validar()" method="get">
+                                        
+                                        <div class="nombre">
+                                        <label >Nombre y Apellido</label>                                       
+                                        
+                                        <input id="inputNombre" type="text"  placeholder="Ingrese nombre" size="20" maxlength="30" requiered />
+                                        </div>
+                                         
+                                        <div class="dni">
+                                            <label id="labelDni">DNI</label>
+                                            <input type="text"  id="dni"  placeholder="Ingrese DNI" size="10" maxlength="9"/> 
+                                        </div>
+                                        
+                                        
+                                        <div class="tel">
+                                            <label >Teléfono</label>                                   
+                                                                                
+                                        <input type="text"  id="tel" placeholder="Ingrese Teléfono" /> 
+                                        </div>
+                                        
+
+                                        <div class="ciudad">
+                                            <label >Ciudad</label>
+                                            <input type="text"  id="ciudad" placeholder="Ingrese su ciudad" size="20" maxlength="40" required /> 
+                                        </div>
+                                           
+                                        <div class="sexo">
+                                            <label id="labelSexo">Sexo</label>                                  
+                                         
+                                        <input type="radio" class="radioboton" name="sexo" value="mujer" /> F
+                                        <input type="radio" class="radioboton" name="sexo" value="hombre" checked="checked" /> M 
+                                        </div>
+                                        
+                                        <div class="viajebloque">
+                                            <label>¿Has viajado al exterior de la República Argentina?</label> 
+                                        <input type="radio" class="radioboton" name="viaje" id="viajesi" value="si" /> Sí
+                                        <input type="radio" class="radioboton" name="viaje" id="viajeno" value="no" checked="checked" /> No  
+                                        </div>
+                                        
+                                        <div class="paises" id="paises">
+                                            <label>Países visitados:</label> 
+                                        <select id="paisesSelect">                                           
+                                              <option>Bélgica</option>
+                                              <option>Francia</option>
+                                              <option>Brasil</option>
+                                              <option>Inglaterra</option>
+                                              <option>Portugal</option>
+                                              <option>Croacia</option>
+                                              <option>España</option>
+                                         </select>
+                                        </div>
+
+                                            <div class="cuestionarioSint">
+                                                <p>Por favor, indica los síntomas que presentas:</p>                    
+                                        
+                                            <label >¿Tuviste Fiebre mayor a 38 grados?</label> 
+                                            <input type="radio" class="radioboton" name="fiebre" value="si" /> Sí
+                                            <input type="radio" class="radioboton" name="fiebre" value="no" checked="checked" /> No
+
+                                        
+                                            <label class="pregunta">¿Tuviste dolores de cabeza?</label> 
+                                            <input type="radio" class="radioboton" name="cabeza" value="si" /> Sí
+                                            <input type="radio" class="radioboton" name="cabeza" value="no" checked="checked" /> No
+
+                                        
+                                            <label class="pregunta">¿Tuviste una tos persistente?</label> 
+                                            <input type="radio" class="radioboton" name="tos" value="si" /> Sí
+                                            <input type="radio" class="radioboton" name="tos" value="no" checked="checked" /> No
+
+                                       
+                                            <label class="pregunta">¿Tuviste dolor de garganta?</label> 
+                                            <input type="radio" class="radioboton" name="garganta" value="si" /> Sí
+                                            <input type="radio" class="radioboton" name="garganta" value="no" checked="checked" /> No
+
+                                        
+                                            <label class="pregunta">¿Tuviste dificultad para respirar?</label> 
+                                            <input type="radio" class="radioboton" name="respirar" id="respirarsi" value="si" /> Sí
+                                            <input type="radio" class="radioboton" name="respirar" id="respirarno" value="no" checked="checked" /> No
+                                            </div>                                        
+                                            
+                                            <div class="dir" id="direccion">
+                                                <label>Dirección</label>
+                                                <input type="text" placeholder="Ingrese su dirección" /> 
+                                            </div>
+                                        
+                                            <div class="ciudad2">
+                                                <label>Ciudad</label>
+                                                <input type="text" placeholder="Ingrese su ciudad" />  
+
+                                            </div>                                  
+                                               
+
+                                                                                 
+                                         
+                                        
+                                        
+                                        <input id="botonform" type="submit" value="ENVIAR TEST" />       
+
+
+                             </form>
+
+                                                        
+                             <div class="imgPrenvencion">
+                                <h1 id="encMedidas">MEDIDAS DE PRECAUCIÓN</h1>
+                             <img class="sintomas" src="img/lavarse.png">
+                             <img class="sintomas" src="img/nariz.png">
+                             <img class="sintomas" src="img/estornudar.png">
+                             <img class="sintomas" src="img/ventilar.png">
+                             <img class="sintomas" src="img/limpiar.png">
+                             <img class="sintomas" src="img/contacto.png">
+                             <img class="sintomas" src="img/domicilio.png">
+                             <img class="sintomas" src="img/mate.png">
+                             </div>
+                             
+                             
+                             <h1 id="encHospital">HOSPITAL MÁS CERCANO ESPECIALIZADO EN LA ENFERMEDAD</h1>
+                             
+                             <div class="contactoHosp">
+                                <h2>NOMBRE HOSPITAL</h2>
+                                <p>Tel</p>
+                                <p>Dirección</p>
+                                <p>Ciudad</p>
+                                
+                                
+                                <img src="img/hospital.jpg">
+                             </div>
+                             
+                             
+                             <div class="mapa">
+                             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52581.21235845154!2d-58.48479382089844!3d-34.5453062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb43ae6018ddf%3A0x3d7f60a75bfa308a!2sEstadio%20Monumental%20Antonio%20Vespucio%20Liberti!5e0!3m2!1ses!2sar!4v1601994450527!5m2!1ses!2sar" ></iframe>
+                             
+                             </div>
+		     	
+        </div>
+
+
+
+
+
+
+        <footer>
+            <div class="contenidofooter">
+                <div id="info">
+                <h3>Datos</h3>
+                <p id="datos">Alan David Valdez- Dni: 34929331
+                
+                </p>
+                <p id="datos">Angel Alberto Escalera- Dni: 42339626
+                    
+                </p>
+                <p id="datos">Brenda Mariana Rementeria- Dni: 41662104
+                    
+                </p>
+                
+                
+                
+                </div>
+                
+                    </div>
+                    <div class="contenidofooter" id="contFooter2">
+                        <h3>Menú inferior</h3>
+                        <a class="linkfooter" href="index.html">Inicio</a> <dt></dt>
+                        <a class="linkfooter" href="calendario.html">Vacunas</a> <dt></dt>
+                          <a class="linkfooter" href="enfermedades.html">Enfermedades</a>
+                          <dt></dt>
+                         <a class="linkfooter" href="mapa-de-hospitales.html">Ubicacion</a><dt></dt>
+                        
+                    </div>
+                    <div class="contenidofooter" id="contFooter3">
+                        <h3>Redes sociales</h3>
+                        <img class="imgfooter" src="img/gmail.png"     />
+                        <img class="imgfooter" src="img/iconfcb.png"  />
+                        <img class="imgfooter" src="img/iconistag.png"/>
+                        <h4>Contacto inmediato</h4>
+                        
+                    </div>
+                
+                
+                
+                </div>
+        </footer>
+        <script type="text/javascript" src="js/covid.js"></script>
+</body>
+</html>

@@ -1,0 +1,150 @@
+<!--
+    --Head--
+    Contiene los enlaces css y js necesarios para el correcto funcionamiento de la página.
+
+    --Header--
+    Contiene los contenedores y elementos que conforman la cabecera de la página y la barra de búsqueda.
+
+    --div "barraHerramientas"--
+    contiene los elementos que conforman el menú de navegación.
+
+    --div "gridContenido"--
+    Contiene los contenedores proncipales con los elementos del formulario, la información de contacto y el mapa.
+
+    --Footer--
+    Contiene información de los integrantes del grupo (nombre y DNI), el menú de navegación inferior y enlaces de redes sociales.
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Formulario de contacto</title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" type="text/css" href="css/styles.css">
+        <link rel="stylesheet" type="text/css" href="css/contacto.css">
+        <script type="text/javascript" src="js/contacto.js"></script>
+        <script src="https://kit.fontawesome.com/9887590638.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+            <div class="headercontenido">
+                <img class="iconoprincipal"  src="img/iconocorazion.png">
+            </div>
+        
+        
+            <div class="headercontenido">
+                <input type="search" id="barrabusqueda" list="enfe">
+                <img src="img/lupa.png" class="lupa">
+        
+                <datalist id="enfe">
+                    <option value="COVID-19"></option>
+                    <option value="Dengue"></option>
+                    <option value="Enfemedades cardiovasculares"></option>
+                    <option value="Diabetes"></option>
+                    <option value="Ezquizofrenia"></option>
+                </datalist>
+            </div>
+        </header>
+        <div class="barraherramientas">
+            <ul class="contenidoherramientas">
+                <li class="elemento"><a class="botonherramienta" href="index.html">Inicio</a></li>
+                <li class="elemento"><a class="botonherramienta" href="enfermedades.html">Enfermedades</a></li>
+                <li class="elemento"><a class="botonherramienta" href="calendario.html">Vacunas</a></li>
+                <li class="elemento"><a class="botonherramienta" href="mapa-de-hospitales.html">Hospitales</a></li>
+                <li class="elemento"><a class="botonherramienta" href="contacto.html">Contacto</a></li>
+            </ul>
+            
+        </div>
+        
+        <div class="gridContenido">
+            <div class=contenedorFormCon>
+                <h3 class="h3-con">Contacto</h3>
+                <form action="#" onsubmit="return validar()" method="GET">
+                    
+                    <label>Nombre</label>
+
+                    <input id="nombre" type="text" placeholder="Ingrese su nombre" size="20" maxlength="30">
+                    
+                    <label>Apellido</label>
+                    
+                    <input id="apellido" type="text" placeholder="Ingrese su apellido" size="20" maxlength="40">
+                    
+                    <label>Email</label>
+                    
+                    <input id="email" type="text" placeholder="Ingrese su email">
+                    
+                    <label>Teléfono</label>
+                    
+                    <input id="tel" type="tel" placeholder="Ingrese su número telefónico">
+                    
+                    <label>Consulta</label>
+                    
+                    <textarea id="in-consulta" onkeydown="countChars()"></textarea>
+                    <p id="caracteresRestantes">1000 caracteres restantes</p>
+                    
+                    <input id="enviar" type="submit" value="Enviar">
+                    <input id="reset" type="reset" value="Reset">
+                    <div id="mensaje" class="error"></div>
+                </form>
+            </div>
+            <div class="contenedorInfoCon">
+                <h3 class="h3-con">Datos de contacto</h3>
+                <p>Dirección</p>
+                <p>Teléfonos</p>
+                <p>Celular</p>
+                <p>Email</p>
+                <p>Web</p>
+                <i class="fas fa-envelope-square"></i>
+                <i class="fab fa-facebook-square"></i>
+                <i class="fab fa-instagram-square"></i>
+            </div>
+            <div class="contenedorMapa">
+                <h3 class="h3-con">Ubicación</h3>
+                <iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52581.21235845154!2d-58.48479382089844!3d-34.5453062!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb43ae6018ddf%3A0x3d7f60a75bfa308a!2sEstadio%20Monumental%20Antonio%20Vespucio%20Liberti!5e0!3m2!1ses!2sar!4v1601994450527!5m2!1ses!2sar" ></iframe>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="contenidofooter">
+                <div id="info">
+                <h3>Datos</h3>
+                <p id="datos">Alan David Valdez- Dni: 34929331
+                
+                </p>
+                <p id="datos">Angel Alberto Escalera- Dni: 42339626
+                    
+                </p>
+                <p id="datos">Brenda Mariana Rementeria- Dni: 41662104
+                    
+                </p>
+                
+                
+                
+                </div>
+                
+                    </div>
+                    <div class="contenidofooter" id="contFooter2">
+                        <h3>Menú inferior</h3>
+                        <a class="linkfooter" href="index.html">Inicio</a> <dt></dt>
+                        <a class="linkfooter" href="calendario.html">Vacunas</a> <dt></dt>
+                          <a class="linkfooter" href="enfermedades.html">Enfermedades</a>
+                          <dt></dt>
+                         <a class="linkfooter" href="mapa-de-hospitales.html">Ubicacion</a><dt></dt>
+                        
+                    </div>
+                    <div class="contenidofooter" id="contFooter3">
+                        <h3>Redes sociales</h3>
+                        <img class="imgfooter" src="img/gmail.png"     />
+                        <img class="imgfooter" src="img/iconfcb.png"  />
+                        <img class="imgfooter" src="img/iconistag.png"/>
+                        <h4>Contacto inmediato</h4>
+                        
+                    </div>
+                
+                
+                
+                </div>
+        </footer>
+        
+    </body>
+</html>
+

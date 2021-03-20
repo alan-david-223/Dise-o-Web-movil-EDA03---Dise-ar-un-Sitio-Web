@@ -1,0 +1,167 @@
+/*grid principal que contiene todos los elementos*/
+
+.grid-container {    
+    
+    display: grid;        
+        grid-template-columns: 1fr;
+        grid-template-rows: 100px 500px 100px 500px;        
+        grid-row-gap: 2%;             
+        padding: 2%;
+  }
+
+  /*contenedor 1 para el título*/
+.contenedortitulomapa{
+    grid-row: 1;
+    width: auto;
+    height: auto;
+    margin: auto;    
+    
+}
+
+#titulomapa{
+    font-size: 3vw;
+    text-align: center;
+}
+
+/*contenedor 2 para el mapa*/
+.contenedormapa{
+    grid-row: 2;
+    width: 100%;
+    height: 100%;
+    margin: auto; 
+
+}
+
+#mapa{  
+    border-radius: 37px;
+    width: 100%;
+    height: 100%;
+}
+
+/*Contenedor lista hospitales*/
+
+/*Titular de la lista de hospitales*/
+.contenedortitulLista{
+    grid-row: 3;
+    width: auto;
+    height: auto;
+    margin: auto;
+    margin-bottom: 0%;
+}
+
+#tituloListaHospitales{
+    font-size: 3vw;
+    text-align: center;
+}
+
+/*Contenedor general de opciones de Hospitales*/
+#contenedorOpcionesLista{
+    grid-row: 4;
+    margin: auto;
+    width: 100%;
+    height: fit-content;
+}
+
+/*Nombre y fotos de los hospitales*/
+.opciones{
+    display: inline-block;
+    background-color: transparent;
+    height: 300px;
+    width: 200px;
+    border-radius: 30%;
+    margin: 0px 100px 45px 100px;
+}
+
+.contenedorimgopciones{
+   
+    height: 200px;
+    width: 200px;
+    border-radius: 37px;
+}
+
+.imgopciones{
+    height: inherit;
+    width: inherit;
+    border-radius: 37px;
+ 
+}
+
+.nombreHosp{
+    width: 180px;
+    text-align: center;
+    display: inline-block;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    margin: 6px 6px;
+    padding:  5px;
+    background-color:lightblue;
+    border-radius: 17px;
+}
+
+/*Boton de informacion*/
+.botonInfo{
+    height: 35px;
+    width: 70px;
+    border-radius: 10px;
+    border-style: solid;
+    border-width: 1px;
+    display: block;
+    float: right;
+    background-color: rgb(9, 160, 160);
+    margin-top: 15px;
+}
+
+.botonInfo:hover{
+    background-color: turquoise;
+    border-color: teal;
+}
+
+/*Estilo del contenedor general y los elementos de los popup*/
+.popupContenedor{
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+    
+.popupTexto{
+    background-color: #fefefe;
+    margin: auto;
+    padding: 30px;
+    border: 1px solid teal;
+    border-radius: 37px;
+    width: 50%;
+}
+
+.close{
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover{
+  color:teal;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/*Estado default de los popup*/
+#popupOp1{
+    display: none;
+}
+
+#popupOp2{
+    display: none;
+}
+
+#popupOp3{
+    display: none;
+}

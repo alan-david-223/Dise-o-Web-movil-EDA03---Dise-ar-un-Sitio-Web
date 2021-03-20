@@ -1,0 +1,290 @@
+/*Estilo de la grilla general y encabezados de contenidos*/
+* {
+	font-family: Arial;
+}
+
+.gridContenedorGeneral{
+	margin: auto;
+	padding-left: 3%;
+    width: fit-content;
+	display: grid;
+	grid-template-columns: repeat(2,50%);
+	grid-template-rows: repeat(6,auto);
+}
+
+h1{
+	text-align: center;
+	margin: 3%;
+
+}
+
+/*---DESCRIPCION COVID---
+contiene los estilos para la imagen de COVID-19 y la descripción del mismo*/
+
+/*encabezado covid*/
+#covidtitu {
+	margin: auto;
+	margin-top: 3%;
+	width: 50%;
+	padding: 20px;
+}
+
+/*bloque con imagen y descripción de covid*/
+#covid {	
+	width: 80%;
+	height: 500px;
+	margin: auto;
+	grid-row: 1;
+	grid-column-start: 1;
+	grid-column-end: 3;
+ }
+
+/*imagen*/
+#covidimg{
+	margin: auto;
+	float: left;    
+    width: 50%;
+    height: 75%;    
+    border-radius: 5%;       
+
+}
+
+/*texto*/
+#covidinfo{
+	margin: auto;	
+	text-align: justify;	
+	float: right;
+	width: 47%;
+    height: 90%;
+	margin-left: 3%;
+   
+}
+
+
+/*---ENCABEZADO FORMULARIO---*/
+
+#tituloformulario{
+	
+	margin: auto;
+	margin-top: 7%;
+	margin-bottom: 5%;
+	grid-row: 2;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+/*---SINTOMAS---
+Contiene los estilos para los elementos del apartado de síntomas de COVID*/
+.infoSintomas{
+	padding-left: 5%;
+	padding-right: 3%;
+	height: auto;
+	width: auto;
+	text-align: justify;
+	grid-column: 1;
+	grid-row: 3;
+}
+
+/*imagenes*/
+.sintomasimg{
+	margin: auto;
+	float: left;
+    width: 44%;
+    height: auto;
+	padding: 10px;
+}
+
+#tos {
+	margin-left: 20%;
+	
+	
+}
+
+/*---FORMULARIO---
+Contiene los estilos para el contenedor general del formulario de diagnóstico y para cada uno de sus campos*/
+
+.form{
+	padding: 2%;
+	width: auto;	
+	grid-column: 2;
+	grid-row: 3;
+	clear: both;
+	margin: auto;	
+	display: grid;
+	grid-template-columns: repeat(2, 50%);
+	grid-template-rows: repeat(8,auto);	
+	grid-column-gap: 5%;
+}
+
+label{
+	font-size: 17px;	 
+	text-align: left;
+	margin: auto;
+	clear: both;
+}
+
+input{
+	margin-top: 5px;
+    margin-bottom: 15px;
+	height: 25px;
+	width: 85%;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: turquoise;
+    clear: both;
+}
+
+.radioboton {	
+	width: 20px;
+}
+
+/*elementos formulario*/
+.nombre{
+	grid-row: 1;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+#inputNombre{
+	width: 93%;
+}
+
+.dni{
+	grid-row: 2;
+	grid-column: 1;
+}
+#labelDni{
+	margin-right: 5%;
+}
+
+.tel{
+	grid-row: 2;
+	grid-column: 2;
+}
+
+.ciudad{
+	grid-row: 3;
+	grid-column: 1;
+}
+
+sexo{
+	grid-row: 3;
+	grid-column: 2;
+}                                 
+#labelSexo{
+	margin-right: 80%;
+}
+
+.viajebloque{
+	grid-row: 4;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+.paises{
+	grid-row: 5;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+#paisesSelect{
+	margin-top: 5px;
+    margin-bottom: 5px;
+	height: 25px;
+	width: 55%;
+    border-radius: 7px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: turquoise;
+}
+
+.cuestionarioSint{
+	grid-row: 6;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+.pregunta::before{
+	content: '\A';
+	white-space: pre;
+}
+
+.dir{
+	margin-top: 5%;
+	grid-row: 7;
+	grid-column: 1;
+}
+
+.ciudad2{
+	margin-top: 5%;
+	grid-row: 7;
+	grid-column: 2;
+}
+
+#botonform{
+	margin-left: 38%;
+	grid-row: 8;
+	grid-column: 2;
+	height: 40px;
+    width: 50%;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgb(9, 160, 160);
+}
+#botonform:hover{
+	background-color: turquoise;
+    border-color: teal;
+}
+
+/*---MEDIDAS DE PRECAUCION---*/
+
+/*contenedor pasos prevencion*/
+.imgPrenvencion{
+	margin-left: 3%;
+	padding-bottom: 2%;
+	grid-row: 4;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+/*pasos*/
+.sintomas{
+    float: left;
+    width: 230px;
+    height: 200px;
+	padding: 20px;
+	margin-right: 3%;
+}
+
+/*---HOSPITALES CERCANOS---*/
+
+/*encabezado*/
+#encHospital{
+	grid-row: 5;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+/*contacto hospotal*/
+.contactoHosp{
+	text-align: left;
+	padding-left: 5%;
+	padding-bottom: 3%;
+	grid-row: 6;
+	grid-column: 1;
+}
+
+/*mapa*/
+.mapa{
+	padding-top: 3%;
+	padding-bottom: 4%;
+	grid-row: 6;
+	grid-column: 2;
+}
+iframe{
+	width: 625px;
+    height: 100%;
+    border-radius: 37px;
+}
+
+
+

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	 <link rel="stylesheet" href="css/styles.css">
+	 <link rel="stylesheet" type="text/css" href="css/enfermedades.css"> 
+	<title>Listado de Enfermedades</title>
+</head>
+
+<header> 
+        
+        <div class="headercontenido">
+            <img class="iconoprincipal"  src="img/iconocorazion.png">
+    </div>
+   
+   
+    <div class="headercontenido">
+        <input type="search" id="barrabusqueda" list="enfe">
+        <img src="img/lupa.png" class="lupa">
+
+        <datalist id="enfe">
+			<option value="COVID-19"></option>
+			<option value="Dengue"></option>
+			<option value="Enfemedades cardiovasculares"></option>
+			<option value="Diabetes"></option>
+			<option value="Ezquizofrenia"></option>
+        </datalist>
+    </div>
+    
+</header>
+
+ <div class="barraherramientas">
+        <ul class="contenidoherramientas">
+			<li class="elemento"><a class="botonherramienta" href="index.html">Inicio</a></li>
+			<li class="elemento"><a class="botonherramienta" href="enfermedades.html">Enfermedades</a></li>
+			<li class="elemento"><a class="botonherramienta" href="calendario.html">Vacunas</a></li>
+			<li class="elemento"><a class="botonherramienta" href="mapa-de-hospitales.html">Hospitales</a></li>
+			<li class="elemento"><a class="botonherramienta" href="contacto.html">Contacto</a></li>
+           
+        </ul>
+        
+        </div>
+<body>	
+	<!--Título de la página-->
+	<h1>ENFERMEDADES</h1>
+
+	<div>  
+			<!--Barra de búsqueda que selecciona enfermedades-->
+  			<datalist id="enfermedades">
+  				<option value="COVID-19"><a href="#COVID-19"></a></option>
+  				<option value="dengue"><a href="#dengue"></a></option>
+  				<option value="cardiovasculares"><a href="cardiovasculares"></a></option>
+  				<option value="diabetes"><a href="diabetes"></a></option>
+  				<option value="esquizofrenia"><a href="esquizofrenia"></a></option>
+  			</datalist>
+
+  			<input list="enfermedades" id="busqueda" type="text" placeholder="Filtrar por Enfermedad">
+
+	</div>
+
+<!--Sección principal. Alberga un artículo por cada enfermedad-->
+	<section>
+		<article id="COVID-19">
+			<!--Cada artículo tiene ID propio y dentro hay una clase para título+descripción+boton y aparte, la imagen correspondiente-->
+			<img class="enfermedadimg" src="img\covid.jpg" alt="Imágen covid">
+			
+			<div class="descripcion">
+			<h2>COVID-19</h2>
+			<p>COVID-19 (acrónimo del inglés coronavirus disease 2019),​ en español conocida como enfermedad por coronavirus 2019
+			e incorrectamente como neumonía por coronavirus, es una enfermedad infecciosa causada por el virus SARS-CoV-2.9​10​            
+			Produce síntomas similares a los de la gripe o catarro, entre los que se incluyen fiebre, tos,11​ disnea, mialgia y fatiga.
+			En casos graves se caracteriza por producir neumonía, síndrome de dificultad respiratoria aguda y choque séptico que conduce
+			a cerca de 3,75 % de los infectados a la muerte según la OMS.16​ No existe tratamiento específico; las medidas terapéuticas principales
+			consisten en aliviar los síntomas y mantener las funciones vitales.         
+			</p>			
+			<a href="covid.html" class="detalle"><button type="button">Ver Detalle</button></a>
+			</div>
+
+			
+		</article>
+		<article id="dengue">
+			<img  class="enfermedadimg"  src="img\dengue.jpg" alt="Imágen Dengue">
+
+			<div class="descripcion">
+			<h2>DENGUE</h2>
+			<p>El dengue es una enfermedad infecciosa causada por el virus del dengue, perteneciente al género flavivirus,
+			que es transmitida por mosquitos, principalmente por el Aedes aegypti. Existen 5 tipos del virus de dengue.
+			La infección causa síntomas gripales, y en ocasiones evoluciona hasta convertirse en un cuadro potencialmente mortal,
+			llamado dengue grave o dengue hemorrágico.
+			Es una infección muy extendida que se presenta en todas las regiones de clima tropical del planeta, y últimamente en regiones
+			de clima templado con veranos cálidos y húmedos. En los últimos años la transmisión ha aumentado de manera predominante en
+			zonas urbanas y se ha convertido en un importante problema de salud pública. 
+			</p>
+			<a href="covid.html" class="detalle"><button type="button">Ver Detalle</button></a>
+			</div>
+			
+
+
+		</article>
+		<article id="cardiovasculares">
+			<img  class="enfermedadimg"  src="img\cardiovasculares.jpg" alt="Imágen cardiovasculares">
+
+			<div class="descripcion">
+			<h2>ENFERMEDADES CARDIOVASCULARES</h2>
+				<p>El término enfermedades cardiovasculares es usado para referirse a todo tipo de enfermedad de las arterias coronarias,
+				que son relacionadas con el corazón o los vasos sanguíneos, (arterias y venas). Este término describe cualquier enfermedad
+				que afecte al sistema cardiovascular (usado en MeSH), es utilizado comúnmente para referirse a aquellos relacionados con
+				la arteriosclerosis (enfermedades en las arterias). Estas condiciones tienen causas, mecanismos, y tratamientos similares.
+				En la práctica, las enfermedades cardiovasculares son tratadas por cardiólogos, cirujanos cardiotorácicos,
+				(cirujanos vasculares), neurólogos, y radiólogos de intervención, dependiendo del sistema y órgano tratado.
+			</p>
+			<a href="covid.html" class="detalle"><button type="button">Ver Detalle</button></a>
+			</div>
+			
+
+
+		</article>
+		<article id="diabetes">
+			<img  class="enfermedadimg"  src="img\Diabetes.jpg" alt="Imágen Diabetes" >
+
+			<div class="descripcion">
+			<h2>DIABETES</h2>
+				<p>La diabetes mellitus (DM) es un conjunto de trastornos metabólicos, cuya característica común principal es la presencia
+				de concentraciones elevadas de glucosa en la sangre de manera persistente o crónica, debido ya sea a un defecto en la
+				producción de insulina, a una resistencia a la acción de ella para utilizar la glucosa, a un aumento en la producción
+				de glucosa o a una combinación de estas causas. También se acompaña de anormalidades en el metabolismo de los lípidos
+				, proteínas, sales minerales y electrolitos.
+				La diabetes se asocia con la aparición de complicaciones en muchos sistemas orgánicos, siendo los más evidentes
+				la pérdida de la visión, el compromiso de vasos sanguíneos, el compromiso del corazón, el compromiso cerebral y de la irrigación intestinal.
+
+			</p>
+			<a href="covid.html" class="detalle"><button type="button">Ver Detalle</button></a>
+			</div>
+			
+
+
+		</article>
+		<article id="esquizofrenia">
+			<img  class="enfermedadimg" src="img\Esquizofrenia.jpg" alt="Imágen Esquizofrenia" >
+
+			<div class="descripcion">
+			<h2>ESQUIZOFRENIA</h2>
+				<p>La esquizofrenia (del griego clásico σχίζειν schizein ‘dividir, escindir, hendir, romper’ y φρήν phrēn,
+				‘entendimiento, razón, mente’) es un diagnóstico psiquiátrico que abarca un amplio grupo de trastornos mentales crónicos
+				y graves, caracterizado a menudo por conductas que resultan anómalas para la comunidad y una percepción alterada de la realidad.
+				​ La esquizofrenia causa además alteraciones en varios aspectos del funcionamiento psíquico del individuo, principalmente de la
+				consciencia de realidad, y una desorganización neuropsicológica más o menos compleja, en especial de las funciones ejecutivas,
+				que lleva a una dificultad para mantener conductas motivadas y dirigidas a metas, y una significativa disfunción social.
+						
+			</p>
+			<a href="covid.html" class="detalle"><button type="button">Ver Detalle</button></a>	
+			</div>
+			
+
+
+		</article>	
+	</section>
+
+
+
+
+<footer>
+    <div class="contenidofooter">
+<div id="info">
+<h3>Datos del Grupo</h3>
+<p id="datos">Alan David Valdez- Dni: 34929331
+
+</p>
+<p id="datos">Angel Alberto Escalera- Dni: 42339626
+    
+</p>
+<p id="datos">Brenda Mariana Rementeria- Dni: 41662104
+    
+</p>
+
+
+
+</div>
+
+    </div>
+    <div class="contenidofooter" id="contFooter2">
+        <h3>Menú inferior</h3>
+        <a class="linkfooter" href="index.html">Inicio</a> <dt></dt>
+        <a class="linkfooter" href="calendario.html">Vacunas</a> <dt></dt>
+          <a class="linkfooter" href="enfermedades.html">Enfermedades</a>
+          <dt></dt>
+         <a class="linkfooter" href="mapa-de-hospitales.html">Ubicacion</a><dt></dt>
+        
+    </div>
+    <div class="contenidofooter" id="contFooter3">
+        <h3>Redes sociales:</h3>
+        <img class="imgfooter" src="img/gmail.png"     />
+        <img class="imgfooter" src="img/iconfcb.png"  />
+        <img class="imgfooter" src="img/iconistag.png"/>
+        <h4>Contacto inmediato</h4>
+    </div>
+
+
+
+</div>
+
+</footer>
+
+
+</body>
+</html>

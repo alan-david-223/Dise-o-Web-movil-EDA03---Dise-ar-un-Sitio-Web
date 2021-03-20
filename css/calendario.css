@@ -1,0 +1,92 @@
+* {
+    box-sizing: border-box;
+  }
+
+#calendario{
+    width: 80%;    
+    margin: auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 1%;
+    max-width:100%;
+    height:auto;
+}
+
+
+/*Tamaño para Tablet*/
+@media screen and (min-width: 47em) and (max-width:60em){
+
+    #calendario{        
+        margin-top: 15%;
+        margin-bottom: 5%;
+        padding: 1%;      
+        max-width:80%;
+        
+
+    }
+    
+    /*Calendario - Título del mes*/
+    .fc-left {
+        font-size: 0.5em;
+    }
+
+    /*Calendario - Botones del centro*/
+    .fc-center{
+        font-size: 0.7em;
+    }
+    /*Calendario - Boton "Today"*/
+    .fc-today-button{
+        width: 60px;
+        height: auto;
+        font-size: 0.7em;
+    }
+
+    /*Calendario - Botones de semana*/
+    .fc-button-group{     
+        font-size: 0.7em;  
+    }
+    /*Calendario - Nombres y números de días*/
+    .fc-view-container{
+        font-size: 0.7em;
+    }
+
+}
+
+/*Tamaño para Celulares*/
+@media screen and (max-width: 47em){
+       #calendario{        
+        margin-top: 15%;
+        margin-bottom: 5%;
+        padding: 1%;      
+        max-width:80%;
+        
+
+    }
+
+
+    /*Calendario - Título del mes*/
+    .fc-left {
+        font-size: 0.5em;
+    }
+
+    /*Calendario - Botones del centro*/
+    .fc-center{
+        font-size: 0.7em;
+    }
+    /*Calendario - Boton "Today"*/
+    .fc-today-button{
+        width: 60px;
+        height: auto;
+        font-size: 0.7em;
+    }
+
+    /*Calendario - Botones de semana*/
+    .fc-button-group{     
+        font-size: 0.7em;  
+    }
+    /*Calendario - Nombres y números de días*/
+    .fc-view-container{
+        font-size: 0.7em;
+    }
+
+}

@@ -1,0 +1,156 @@
+/* Estilo general del cuerpo de la página */
+body{
+    height: 100%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+    background-color:rgb(169, 230, 238);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*Estilo elementos del header*/
+header{
+    background-color: rgb(16, 200, 224);    
+    height: 160px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+.headercontenido{
+    margin: 0px;
+    float: left;
+    margin: 3px;  
+    background-color: transparent;
+    height: 158px;
+    width: 36%;
+}
+.iconoprincipal{
+    height: 140px;
+    margin-top: 10px;
+    margin-left: 40px;
+}
+
+#barrabusqueda{
+    float: left;
+   margin-top: 60px;
+    height: 40px;
+    width: 350px;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 10px;
+    border-color: turquoise;
+}
+.lupa{
+    padding-left: 10px;
+    margin-top: 60px;
+    width: 38px;
+    height: 38px;
+}
+
+
+/* Barra de navegación */
+.barraherramientas{
+    background-color: teal;
+    height: 40px;
+    width: 100%;
+}
+
+/*Botones de navegación*/
+.contenidoherramientas{
+    list-style: none;
+    background-color:transparent;
+    width: 50%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(5, 125px);
+    grid-template-rows: 33px
+
+}
+
+/*botón individual navegación */
+.botonherramienta{
+    text-decoration: none;
+    color: black;
+    padding: 9px;
+    display: block;
+}
+
+/*texto botones navegación*/
+.elemento{
+    display: inline-block;
+    text-align: center;
+}
+
+.elemento:hover{
+
+    background-color: turquoise;
+}
+
+
+/* --FOOTER SOLO-- */
+
+
+footer{   
+    margin-top: 40px;
+    height: auto;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(16, 200, 224);
+    display: grid;
+    grid-template-columns: repeat(3, 35%);    
+    }
+    
+    .contenidofooter{
+        
+        background-color:transparent;
+        height: 200px;
+        width: 100%;
+        padding-left: 20px;
+        float: left;
+    
+    }
+
+    #contFooter2{
+        float: left;
+        margin-left: 20%;
+    }
+
+    #contFooter3{
+        float: right;
+        margin-left: 20%;
+    }
+    
+    .imgfooter{
+        
+       text-align: left;
+        height: 70px;
+        width: 80px;
+        border-radius: 30px;
+    }
+    h3{margin-top: 20px;
+        background-color:transparent;
+       
+       width: 100%;
+    }
+        
+        
+    
+    .linkfooter{
+        font-size: 17px;
+     text-align: left;
+     text-decoration: none;
+     color: black;
+    }
+    .linkfooter:hover{
+        color:cornsilk;
+        text-decoration: none;
+        
+    }
+    dt{
+        height: 13px;
+    }
+    h4{margin-left: 60px;
+        font-size: 19;
+    }

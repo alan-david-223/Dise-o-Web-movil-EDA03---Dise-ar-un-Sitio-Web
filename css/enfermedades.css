@@ -1,0 +1,69 @@
+/*título de la página Enfermedades*/
+h1 {
+    margin: auto;
+    text-align: center;
+    padding: 50px;
+}
+
+/*barra de búsqueda*/
+#busqueda {   
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 79%;
+    height: 25px;
+    border: 1px solid blue;
+    background-color: white;
+    padding: 10px;
+    border-radius: 4%;    
+}
+
+/*Grid principal que alberga otros grids*/
+
+section{
+    margin: auto;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 100% ;
+    grid-template-rows: 19% 19% 19% 19% 19%;
+    margin-top: 3%;
+    grid-row-gap: 1%;
+}
+
+/*Grid para cada bloque de enfermedad*/
+article{
+    margin: auto;
+    width: auto;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 35% 60%;
+    grid-template-rows: 97%;
+    grid-row-gap: 5%;    
+}
+    
+
+/*imágenes de enfermedades*/
+.enfermedadimg {    
+    border-radius: 5%;
+    width: 90%;
+    max-height: 100%;
+    margin: auto;        
+    padding: 0%;    
+}  
+
+/*bloque que alberga título + texto + boton detalles*/
+.descripcion{
+    padding: 1%;  
+    width: 106%;
+    font-size: small;
+    margin: auto;
+    text-align: justify;
+}
+
+/*Titulos de las enfermedades*/
+h2{
+    font: size 1vw;    
+    margin: auto;   
+}
+
